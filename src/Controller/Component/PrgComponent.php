@@ -12,7 +12,7 @@ class PrgComponent extends Component
      *
      * @return void|Cake\Network\Response
      */
-    public function startup()
+    public function initialize(array $config)
     {
         $controller = $this->_registry->getController();
         $request = $controller->request;
